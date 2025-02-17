@@ -1,0 +1,141 @@
+#root
+{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body
+{
+    background-color: hsl(0, 1%, 27%);
+}
+
+.pageTitle
+{
+    text-align: center;
+    color: white;
+    font-size: 3.5em;
+}
+
+.inputContainer
+{
+    display: flex;
+    justify-content: center;
+    width: 45%;
+}
+
+.taskInput
+{
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.taskAdd
+{
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(110, 100%, 75%);
+    box-shadow: 0px 0px 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.taskAdd:hover
+{
+    background-color: hsl(110, 100%, 45%);
+    box-shadow: none;
+}
+
+.taskAdd:active
+{
+    background-color: hsl(110, 100%, 30%);
+}
+
+.tasksContainer
+{
+    list-style-type: none;
+    padding-inline-start: 0;
+    width: 60%;
+    margin: 35px 0px;
+}
+
+.task
+{
+    display: flex;
+    margin: 15px;
+    padding: 15px;
+    overflow: auto;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+
+.task::before
+{
+    color: whitesmoke;
+}
+
+.taskContent
+{
+    flex: 1;
+    font-size: 2em;
+    font-style: oblique;
+}
+
+.delTask
+{
+    margin: 0px 10px;
+    padding: 6px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsla(0, 100%, 57%, 0.942);
+    color: whitesmoke;
+    box-shadow: 0px 0px 3px black;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.delTask:hover
+{
+    background-color: hsla(0, 100%, 47%, 0.942);
+    box-shadow: none;
+}
+
+.delTask:active
+{
+    background-color: hsla(0, 100%, 37%, 0.942);
+}
+
+.upTask, .downTask
+{
+    margin: 0px 2px;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.upTask:hover, .downTask:hover
+{
+    background-color: rgba(241, 241, 85, 0.951);
+}
+
+.upTask:active, .downTask:active
+{
+    background-color: hsla(60, 85%, 50%, 0.951);
+}
